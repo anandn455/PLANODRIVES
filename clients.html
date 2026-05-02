@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planodrives Pte Ltd | Our Clients</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <style>
+    .client-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 4rem 0;
+    }
+    .client-item {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+    }
+    .client-item:hover {
+      transform: translateX(10px);
+    }
+    .client-item:last-child {
+      border-bottom: none;
+    }
+    .client-logo {
+      flex: 0 0 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .client-logo img {
+      max-width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+    }
+    .client-info h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .client-info p {
+      color: var(--text-dark);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+    @media (max-width: 768px) {
+      .client-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+      }
+      .client-logo {
+        flex: 0 0 auto;
+      }
+      .client-item:hover {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <img src="logo.png" alt="Planodrives Logo" class="header-logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About us</a>
+        <div class="dropdown">
+          <a href="index.html#services">Our Expertise <i class="fa-solid fa-chevron-down" style="font-size: 0.7em;"></i></a>
+          <div class="dropdown-content">
+            <a href="service-equipment.html">Process Equipments</a>
+            <a href="service-piping.html">Skid Mounted Systems</a>
+            <a href="service-steel.html">Piping & Structure</a>
+            <a href="service-design.html">Gearbox</a>
+            <a href="service-electrical.html">Mixers & Agitators</a>
+            <a href="service-maintenance.html">O&M</a>
+          </div>
+        </div>
+
+        <a href="certifications.html">Certifications</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="clients.html" style="color: var(--secondary-color);">Clients</a>
+        <a class="btn-contact" href="index.html#contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1920&q=80');">
+    <div class="container">
+      <h1>Our Clients</h1>
+    </div>
+  </section>
+
+  <!-- Clients List Section -->
+  <section class="container">
+    <div class="client-list">
+      
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-micron.png" alt="Micron">
+        </div>
+        <div class="client-info">
+          <h3>Micron</h3>
+          <p>A global leader in semiconductor manufacturing, delivering innovative memory and storage solutions.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-tata.png" alt="Tata Projects Limited">
+        </div>
+        <div class="client-info">
+          <h3>Tata Projects Limited</h3>
+          <p>One of the fastest-growing and most admired infrastructure companies in India.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-meinhardt.png" alt="Meinhardt EPCM">
+        </div>
+        <div class="client-info">
+          <h3>Meinhardt EPCM</h3>
+          <p>A leading global engineering, design, and project management consultancy firm.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-gradiant.png" alt="Gradiant">
+        </div>
+        <div class="client-info">
+          <h3>Gradiant</h3>
+          <p>A global solutions provider and developer of cleantech water projects for advanced water and wastewater treatment.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-jcet.png" alt="JCET">
+        </div>
+        <div class="client-info">
+          <h3>JCET</h3>
+          <p>A leading global semiconductor system integration packaging and test provider.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-pub.png" alt="PUB">
+        </div>
+        <div class="client-info">
+          <h3>PUB</h3>
+          <p>Singapore's National Water Agency, managing the country's water supply, water catchment, and used water.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-munsiong.png" alt="Mun Siong Engineering Limited">
+        </div>
+        <div class="client-info">
+          <h3>Mun Siong Engineering Limited</h3>
+          <p>A leading integrated mechanical engineering and electrical/instrumentation service provider for the oil & gas and petrochemical industries.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-ionexchange.png" alt="Ion Exchange">
+        </div>
+        <div class="client-info">
+          <h3>Ion Exchange</h3>
+          <p>A pioneer in water and environment management with a strong global presence.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-trivikram.png" alt="Trivikram Equipments and Services">
+        </div>
+        <div class="client-info">
+          <h3>Trivikram Equipments and Services</h3>
+          <p>A specialized engineering firm delivering industrial equipment and technical services.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-jsw.png" alt="JSW Energy">
+        </div>
+        <div class="client-info">
+          <h3>JSW Energy</h3>
+          <p>One of India's leading power companies with a strong presence in power generation and transmission.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-drdo.png" alt="DRDO">
+        </div>
+        <div class="client-info">
+          <h3>DRDO</h3>
+          <p>Defence Research and Development Organisation, the premier agency under the Ministry of Defence of the Government of India.</p>
+        </div>
+      </div>
+
+      <div class="client-item">
+        <div class="client-logo">
+          <img src="images/client-larsen.png" alt="Larsen & Toubro">
+        </div>
+        <div class="client-info">
+          <h3>Larsen & Toubro (L&T)</h3>
+          <p>A major technology, engineering, construction, manufacturing and financial services conglomerate.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Footer Col 1 -->
+      <div>
+        <a href="index.html" class="footer-logo">
+          <img src="logo.png" alt="Planodrives Logo" class="footer-logo-img">
+        </a>
+        <p style="opacity: 0.8; line-height: 1.8;">One stop solution provider for Mechanical Engineering, Electrical Engineering, Inspection and Consultancy Services.</p>
+      </div>
+      
+      <!-- Footer Col 2 -->
+      <div>
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="service-equipment.html">Process Equipments</a></li>
+          <li><a href="service-piping.html">Skid Mounted Systems</a></li>
+          <li><a href="service-steel.html">Piping & Structure</a></li>
+          <li><a href="service-design.html">Gearbox</a></li>
+          <li><a href="service-electrical.html">Mixers & Agitators</a></li>
+          <li><a href="service-maintenance.html">O&M</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3 -->
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#associates">Our Associates</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4 -->
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p><strong>Planodrives Pte Ltd</strong></p>
+        <p><i class="fa-solid fa-location-dot" style="margin-top: 5px;"></i> 71 Tuas View Place,<br>#04-10 Westlink Two,<br>Singapore - 637434</p>
+        <p><i class="fa-solid fa-phone"></i> +65-64431875</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:rajesh@planodrives.sg" style="color: var(--secondary-color);">rajesh@planodrives.sg</a> / <a href="mailto:ank@planodrives.com" style="color: var(--secondary-color);">ank@planodrives.com</a></p>
+        
+        <div style="margin-top: 1rem; display: flex; gap: 0.8rem;">
+          <a href="#" style="color: white;"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" style="color: white;"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" style="color: white;"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      Copyright &copy; Planodrives Pte Ltd 2026. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

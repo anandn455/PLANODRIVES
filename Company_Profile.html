@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planodrives Pte Ltd | Company Profile</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Custom Styles (Pulling from existing) -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <style>
+    /* Print Specific Styles for PDF Generation */
+    body {
+      background: #fff;
+    }
+    
+    .brochure-page {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      page-break-after: always;
+    }
+    
+    .cover-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      background: linear-gradient(rgba(10, 37, 64, 0.9), rgba(10, 37, 64, 0.8)), url('https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80') center/cover;
+      color: white;
+    }
+    
+    .cover-page img {
+      max-width: 300px;
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+    
+    .cover-page h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    
+    .section-header {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      border-bottom: 3px solid var(--secondary-color);
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    
+    .service-block {
+      background: #f8fafc;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      border-left: 5px solid var(--secondary-color);
+    }
+    
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .brochure-page {
+        page-break-after: always;
+        min-height: 100vh;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+    
+    .print-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--secondary-color);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: all 0.3s;
+    }
+    .print-btn:hover {
+      background: #004d99;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="window.print()" class="print-btn no-print"><i class="fa-solid fa-file-pdf"></i> Save as PDF</button>
+
+  <!-- Page 1: Cover -->
+  <div class="cover-page brochure-page">
+    <img src="logo.png" alt="Planodrives Logo">
+    <h1>COMPANY PROFILE</h1>
+    <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; opacity: 0.9;">ENGINEERING EXCELLENCE. INTEGRATED SOLUTIONS. RELIABLE DELIVERY.</p>
+    <p style="margin-top: 2rem; font-size: 1.2rem;">Singapore | India | Malaysia</p>
+  </div>
+
+  <!-- Page 2: About Us -->
+  <div class="brochure-page">
+    <h2 class="section-header">About Planodrives</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+      <div>
+        <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1rem;">Who We Are</h3>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">Established in 2011, Planodrives is a premier complete solution provider and package integrator for the water treatment, petrochemical, and manufacturing industries. We operate out of Singapore, India, and Malaysia, bringing global expertise directly to your projects.</p>
+        <p style="font-size: 1.1rem; line-height: 1.8;">Our company was founded by a team of visionary directors with over two decades of hands-on experience designing and fabricating heavy equipment. Our founders have proudly collaborated with leading EPCM companies globally, including <strong>GE, L&T, Wood, Jacobs, Worley, and Exyte</strong>.</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="Engineers" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      </div>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 4rem;">
+      <div style="background: #f1f5f9; padding: 2rem; border-radius: 8px;">
+        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Our Vision</h3>
+        <p>To be a leading global engineering partner known for innovation, quality, and reliability in industrial solutions.</p>
+      </div>
+      <div style="background: #f1f5f9; padding: 2rem; border-radius: 8px;">
+        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Our Mission</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>Deliver high-quality engineered products</li>
+          <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>Ensure timely project completion</li>
+          <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>Provide cost-effective and innovative solutions</li>
+          <li><i class="fa-solid fa-check" style="color: var(--secondary-color); margin-right: 10px;"></i>Maintain strong customer relationships</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 3: Capabilities & Reach -->
+  <div class="brochure-page">
+    <h2 class="section-header">Capabilities & Reach</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center; margin-bottom: 4rem;">
+      <div style="background: var(--primary-color); color: white; padding: 2rem; border-radius: 8px;">
+        <h3 style="font-size: 2.5rem; color: var(--secondary-color);">2011</h3>
+        <p>Year Founded</p>
+      </div>
+      <div style="background: var(--primary-color); color: white; padding: 2rem; border-radius: 8px;">
+        <h3 style="font-size: 2.5rem; color: var(--secondary-color);">3</h3>
+        <p>Global Locations</p>
+      </div>
+      <div style="background: var(--primary-color); color: white; padding: 2rem; border-radius: 8px;">
+        <h3 style="font-size: 2.5rem; color: var(--secondary-color);">80k+</h3>
+        <p>Sq.ft Facilities</p>
+      </div>
+      <div style="background: var(--primary-color); color: white; padding: 2rem; border-radius: 8px;">
+        <h3 style="font-size: 2.5rem; color: var(--secondary-color);">200+</h3>
+        <p>MT Steel Fabricated</p>
+      </div>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+      <div>
+        <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1.5rem;">Our Strengths</h3>
+        <ul class="project-list">
+          <li><i class="fa-solid fa-industry"></i> 30,000 sq.ft manufacturing facility</li>
+          <li><i class="fa-solid fa-warehouse"></i> 50,000 sq.ft associate fabrication facility</li>
+          <li><i class="fa-solid fa-microchip"></i> Advanced machinery and testing infrastructure</li>
+          <li><i class="fa-solid fa-users-gear"></i> Experienced engineering & management team</li>
+        </ul>
+        
+        <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-top: 3rem; margin-bottom: 1.5rem;">Certifications</h3>
+        <p style="font-size: 1.2rem;"><strong>ISO 9001</strong> | <strong>ISO 45001</strong> | <strong>BizSafe Star</strong></p>
+      </div>
+      <div>
+        <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 1.5rem;">Global Footprint</h3>
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--secondary-color);">Singapore (HQ)</h4>
+          <p>135 Tuas View Square, West Link Techpark</p>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--secondary-color);">India</h4>
+          <p>Hosur, Tamil Nadu (30,000+ Sq.ft Facility)</p>
+        </div>
+        <div>
+          <h4 style="color: var(--secondary-color);">Malaysia</h4>
+          <p>Wisma SP, Iskandar Puteri, Johor</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 4: Our Services Overview -->
+  <div class="brochure-page">
+    <h2 class="section-header">Our Expertise</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      
+      <div class="service-block">
+        <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 1rem;">1. Process Equipments</h3>
+        <ul class="project-list">
+          <li><i class="fa-solid fa-check"></i> Pressure Vessels</li>
+          <li><i class="fa-solid fa-check"></i> Activated Carbon Filter (ACF) & Multimedia Filters (MMF)</li>
+          <li><i class="fa-solid fa-check"></i> Week Acid Tank (WAC) & Air Receiver Tank</li>
+          <li><i class="fa-solid fa-check"></i> Flash Mixer, Flocculator, Clarifier</li>
+          <li><i class="fa-solid fa-check"></i> Rubber / FRP lining Tanks</li>
+        </ul>
+      </div>
+
+      <div class="service-block">
+        <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 1rem;">2. Skid Mounted Systems</h3>
+        <ul class="project-list">
+          <li><i class="fa-solid fa-check"></i> RO Skid – Single Stage/Multi Stage</li>
+          <li><i class="fa-solid fa-check"></i> CEDI & UV & UF Skids</li>
+          <li><i class="fa-solid fa-check"></i> Chemical Dosing Skid</li>
+        </ul>
+      </div>
+      
+      <div class="service-block">
+        <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 1rem;">3. Piping & Structure</h3>
+        <ul class="project-list">
+          <li><i class="fa-solid fa-check"></i> CS, SS, Duplex, PP, HDPE, PVC Piping Fabrication</li>
+          <li><i class="fa-solid fa-check"></i> Chemical Cleaning & Pre-Commissioning</li>
+          <li><i class="fa-solid fa-check"></i> CS, SS Structural skid Fabrication</li>
+          <li><i class="fa-solid fa-check"></i> Stairs & Platform Fabrication</li>
+        </ul>
+      </div>
+
+      <div class="service-block">
+        <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 1rem;">4. Gearbox</h3>
+        <ul class="project-list">
+          <li><i class="fa-solid fa-check"></i> Worm, Helical, Planetary Gearboxes</li>
+          <li><i class="fa-solid fa-check"></i> Customised Gearbox & Reverse Engineering</li>
+          <li><i class="fa-solid fa-check"></i> Prototype Manufacturing</li>
+        </ul>
+      </div>
+
+      <div class="service-block">
+        <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 1rem;">5. Mixers & Agitators</h3>
+        <ul class="project-list">
+          <li><i class="fa-solid fa-check"></i> Agitators & Flocculators with Gearbox</li>
+          <li><i class="fa-solid fa-check"></i> FRP & Rubber Lined Agitators</li>
+          <li><i class="fa-solid fa-check"></i> Low speed & High-speed stirrers</li>
+        </ul>
+      </div>
+
+      <div class="service-block">
+        <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 1rem;">6. O&M</h3>
+        <ul class="project-list">
+          <li><i class="fa-solid fa-check"></i> Waste Water Plant & DI Water Plant</li>
+          <li><i class="fa-solid fa-check"></i> UPW System & Ozone System</li>
+          <li><i class="fa-solid fa-check"></i> Facility Maintenance</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Page 5: Flagship Project & Contact -->
+  <div class="brochure-page">
+    <h2 class="section-header">Flagship Project</h2>
+    <div style="background: linear-gradient(to right, #1e293b, #0f172a); color: white; padding: 3rem; border-radius: 12px; margin-bottom: 4rem;">
+      <h3 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 1rem;">Micron Pioneer Semiconductor Project (India)</h3>
+      <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">We successfully delivered end-to-end engineering, fabrication, and testing for India's first semiconductor facility.</p>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 1rem; font-size: 1.1rem;"><i class="fa-solid fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> 19 Process Skids Delivered</li>
+          <li style="margin-bottom: 1rem; font-size: 1.1rem;"><i class="fa-solid fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> 8 Custom Agitators Installed</li>
+        </ul>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 1rem; font-size: 1.1rem;"><i class="fa-solid fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> 11 Pressure Vessels Fabricated</li>
+          <li style="margin-bottom: 1rem; font-size: 1.1rem;"><i class="fa-solid fa-check-circle" style="color: var(--secondary-color); margin-right: 10px;"></i> Complete Fabrication & Testing Scope</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-header">Contact Us</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: #f8fafc; padding: 3rem; border-radius: 12px;">
+      <div>
+        <h3 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 1rem;">Let's Build Your Next Project Together</h3>
+        <p style="font-size: 1.1rem; color: #64748b; margin-bottom: 2rem;">Reach out to our global team for engineering and fabrication solutions.</p>
+        
+        <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+          <i class="fa-solid fa-envelope" style="font-size: 1.5rem; color: var(--secondary-color);"></i>
+          <div>
+            <p style="font-weight: bold; margin: 0;">Sales & Enquiries</p>
+            <p style="margin: 0;">rajesh@planodrives.sg</p>
+            <p style="margin: 0;">ank@planodrives.com</p>
+          </div>
+        </div>
+        
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <i class="fa-solid fa-phone" style="font-size: 1.5rem; color: var(--secondary-color);"></i>
+          <div>
+            <p style="font-weight: bold; margin: 0;">Call Us</p>
+            <p style="margin: 0;">+65 83283660</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <img src="logo.png" alt="Planodrives Logo" style="max-width: 250px; opacity: 0.8;">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

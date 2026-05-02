@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planodrives Pte Ltd | Gallery</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <style>
+    .masonry-gallery {
+      column-count: 3;
+      column-gap: 1.5rem;
+      padding: 4rem 0;
+    }
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1.5rem;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .masonry-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      z-index: 2;
+    }
+    .masonry-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    @media (max-width: 992px) {
+      .masonry-gallery {
+        column-count: 2;
+      }
+    }
+    @media (max-width: 576px) {
+      .masonry-gallery {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <img src="logo.png" alt="Planodrives Logo" class="header-logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About us</a>
+        <div class="dropdown">
+          <a href="index.html#services">Our Expertise <i class="fa-solid fa-chevron-down" style="font-size: 0.7em;"></i></a>
+          <div class="dropdown-content">
+            <a href="service-equipment.html">Process Equipments</a>
+            <a href="service-piping.html">Skid Mounted Systems</a>
+            <a href="service-steel.html">Piping & Structure</a>
+            <a href="service-design.html">Gearbox</a>
+            <a href="service-electrical.html">Mixers & Agitators</a>
+            <a href="service-maintenance.html">O&M</a>
+          </div>
+        </div>
+
+        <a href="certifications.html">Certifications</a>
+        <a href="gallery.html" style="color: var(--secondary-color);">Gallery</a>
+        <a href="clients.html">Clients</a>
+        <a class="btn-contact" href="index.html#contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1920&q=80');">
+    <div class="container">
+      <h1>Gallery</h1>
+    </div>
+  </section>
+
+  <!-- Masonry Gallery Section -->
+  <section class="container">
+    <div class="masonry-gallery">
+      <!-- 15 high quality industrial image placeholders representing different aspect ratios -->
+      <div class="masonry-item"><img src="images/gallery-1.jpg" alt="Gallery Image 1"></div>
+      <div class="masonry-item"><img src="images/gallery-2.jpg" alt="Gallery Image 2"></div>
+      <div class="masonry-item"><img src="images/gallery-3.jpg" alt="Gallery Image 3"></div>
+      <div class="masonry-item"><img src="images/gallery-4.jpg" alt="Gallery Image 4"></div>
+      <div class="masonry-item"><img src="images/gallery-5.jpg" alt="Gallery Image 5"></div>
+      <div class="masonry-item"><img src="images/gallery-6.jpg" alt="Gallery Image 6"></div>
+      <div class="masonry-item"><img src="images/gallery-7.jpg" alt="Gallery Image 7"></div>
+      <div class="masonry-item"><img src="images/gallery-8.jpg" alt="Gallery Image 8"></div>
+      <div class="masonry-item"><img src="images/gallery-9.jpg" alt="Gallery Image 9"></div>
+      <div class="masonry-item"><img src="images/gallery-10.jpg" alt="Gallery Image 10"></div>
+      <div class="masonry-item"><img src="images/gallery-11.jpg" alt="Gallery Image 11"></div>
+      <div class="masonry-item"><img src="images/gallery-12.jpg" alt="Gallery Image 12"></div>
+      <div class="masonry-item"><img src="images/gallery-13.jpg" alt="Gallery Image 13"></div>
+      <div class="masonry-item"><img src="images/gallery-14.jpg" alt="Gallery Image 14"></div>
+      <div class="masonry-item"><img src="images/gallery-15.jpg" alt="Gallery Image 15"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Footer Col 1 -->
+      <div>
+        <a href="index.html" class="footer-logo">
+          <img src="logo.png" alt="Planodrives Logo" class="footer-logo-img">
+        </a>
+        <p style="opacity: 0.8; line-height: 1.8;">One stop solution provider for Mechanical Engineering, Electrical Engineering, Inspection and Consultancy Services.</p>
+      </div>
+      
+      <!-- Footer Col 2 -->
+      <div>
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="service-equipment.html">Process Equipments</a></li>
+          <li><a href="service-piping.html">Skid Mounted Systems</a></li>
+          <li><a href="service-steel.html">Piping & Structure</a></li>
+          <li><a href="service-design.html">Gearbox</a></li>
+          <li><a href="service-electrical.html">Mixers & Agitators</a></li>
+          <li><a href="service-maintenance.html">O&M</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3 -->
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#associates">Our Associates</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4 -->
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p><strong>Planodrives Pte Ltd</strong></p>
+        <p><i class="fa-solid fa-location-dot" style="margin-top: 5px;"></i> 71 Tuas View Place,<br>#04-10 Westlink Two,<br>Singapore - 637434</p>
+        <p><i class="fa-solid fa-phone"></i> +65-64431875</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:rajesh@planodrives.sg" style="color: var(--secondary-color);">rajesh@planodrives.sg</a> / <a href="mailto:ank@planodrives.com" style="color: var(--secondary-color);">ank@planodrives.com</a></p>
+        
+        <div style="margin-top: 1rem; display: flex; gap: 0.8rem;">
+          <a href="#" style="color: white;"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" style="color: white;"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" style="color: white;"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      Copyright &copy; Planodrives Pte Ltd 2026. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
