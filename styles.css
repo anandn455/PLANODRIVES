@@ -185,7 +185,7 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(rgba(13, 71, 161, 0.7), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80');
+  background-image: linear-gradient(rgba(13, 71, 161, 0.7), rgba(0, 0, 0, 0.6)), url('assets/images/home-hero.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -373,7 +373,7 @@ ul {
 }
 
 .contact-bg-section {
-  background-image: linear-gradient(rgba(13, 71, 161, 0.85), rgba(13, 71, 161, 0.85)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80');
+  background-image: linear-gradient(rgba(13, 71, 161, 0.85), rgba(13, 71, 161, 0.85)), url('assets/images/contact-hero.svg');
   background-size: cover;
   background-position: center;
   padding: 8rem 0 12rem;
@@ -571,7 +571,7 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(rgba(13, 71, 161, 0.7), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80');
+  background-image: linear-gradient(rgba(13, 71, 161, 0.7), rgba(0, 0, 0, 0.6)), url('assets/images/about-hero.svg');
   background-size: cover;
   background-position: center;
   margin-top: 70px;
